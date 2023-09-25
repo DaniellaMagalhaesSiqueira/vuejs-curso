@@ -1,0 +1,29 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <p>Usando VueJS - {{nome}} ({{idade}})</p>
+    <p>{{idade * 3 }}</p>
+    <p>{{ exibirRandom() }}</p>
+    <p>{{ Math.random() }}</p>
+    <div>
+        <img height="400" v-bind:src="linkImg">
+    </div>
+    <input type="text" v-bind:value="nome">
+</div>
+
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            nome: 'Daniella',
+            idade: 42,
+            linkImg: 'https://img.freepik.com/fotos-gratis/paisagem-de-nevoeiro-matinal-e-montanhas-com-baloes-de-ar-quente-ao-nascer-do-sol_335224-794.jpg'
+        }, 
+        methods: {
+            exibirRandom(){
+                return Math.random()
+            }
+        }
+    })
+</script>
