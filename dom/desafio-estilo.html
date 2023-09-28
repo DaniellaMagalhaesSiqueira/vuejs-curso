@@ -1,0 +1,51 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<style>
+    .efeito {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+    .destaque {
+        background-color: red;
+        width: 200px !important;
+    }
+    .encolher{
+        background-color: gray;
+        width: 50 !important;
+    }
+</style>
+
+<div id="desafio">
+    <h2>#01</h2>
+    <div>
+        <button @click="iniciarEfeito">Iniciar Efeito</button>
+        <div id="efeito"></div>
+    </div>
+    <h2>#02</h2>
+    <div>
+        <div>Estou sem classe CSS:</div>
+    </div>
+    <h2>#01</h2>
+    <div>
+        <input type="text">
+        <div></div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el: '#desafio',
+        data:{
+            estilo: false
+        },
+        methods: {
+            iniciarEfeito(){
+
+            },
+            iniciarProgresso(){
+                
+            }
+        }
+   })
+</script>
